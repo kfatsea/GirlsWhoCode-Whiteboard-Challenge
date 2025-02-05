@@ -1,7 +1,5 @@
 def repeatedValue(arr):
 
-  # Debugging
-  print(len(arr))
   
   # Valid size of array: 1 <= arr <= 105
   if len(arr) > 105:
@@ -12,18 +10,19 @@ def repeatedValue(arr):
 
     # Array values must be within [-109, 109]
     if arr[i] < -109 or arr[i] > 109:
-      print(f"Array value outside valid range [-109, 109]\nGiven Array: {arr}")
+      print(f"Array value outside valid range [-109, 109]\n\nGiven Array: {arr}")
       return 2
       
     for j in range(i + 1, len(arr)):
       if arr[i] == arr[j]:
-        print(f"True: The number {arr[i]} is repeated at least once.\nGiven array: {arr}")
+        print(f"True: The number {arr[i]} is repeated at least once.\n\nGiven array: {arr}")
         return 0
-      else:
-        print(f"False: No repeated numbers within the array.\nGiven array: {arr}")
-        return 1
+      
+
+  print(f"False: No repeated numbers within the array.\n\nGiven array: {arr}")
+  return 1
 
 
 
-nums = [-20, -1, 1, 3, 3, 4, 3, 2, 4, 2]
+nums = [-200, -1, 1, 3, 3, 4, 3, 2, 4, 2]
 repeatedValue(nums)
