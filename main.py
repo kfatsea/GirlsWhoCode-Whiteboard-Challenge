@@ -1,6 +1,6 @@
 
-MAX_LENGTH = 10**5
-MAX_VALUE = 10**9
+MAX_LENGTH = 105
+MAX_VALUE = 109
 
 def repeatedValue(nums):
     if len(nums) > MAX_LENGTH:
@@ -38,5 +38,5 @@ def optimizedRepeatedValue(nums):
     print("No duplicates found")
     return 0
 
-nums = [-20, -1, 1, 3, 3, 4, 3, 2, 4, 2]
+nums = [-20, -1, 1, 3, 2, 4, 9, 8, 12, 10]
 optimizedRepeatedValue(nums)
